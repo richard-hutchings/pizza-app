@@ -1,8 +1,8 @@
 export function formatCurrency(value) {
-  return new Intl.NumberFormat("en", {
+  return new Intl.NumberFormat("au", {
     style: "currency",
     currency: "AUD",
-    currencyDisplay: 'symbol',
+    currencyDisplay: '$',
   }).format(value);
 }
 
